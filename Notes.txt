@@ -1,0 +1,10 @@
+In order to create the database.
+From the src\Skoruba.AuditLogging.EntityFramework folder, run the following commands:
+dotnet ef migrations add DbInit -c DefaultAuditLoggingDbContext -o Data/Migrations
+dotnet ef database update -s ../skoruba.auditlogging.host/skoruba.auditlogging.host.csproj
+
+The project is configured to use database AuditDB from the (localDB)\MSSQLLocalDB database.
+The project is configured to use database AuditDB from the (localDB)\MSSQLLocalDB database.
+
+If the second command doesn't succeed to create AuditDB database ( the cause is a bug in a LocalDB ), a workaround is to create the database and after that run the command again.
+If you want to use an other database, you must change ApplicationDbContext connection string in appsettings.json in Host project, then run the second command.

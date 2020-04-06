@@ -331,3 +331,4 @@ ASALocalRun/
 /src/Skoruba.AuditLogging.Host/Data/Migrations/
 /src/Skoruba.AuditLogging.Host/appsettings.Development.json
 /src/Skoruba.AuditLogging.Host/appsettings.Production.json
+**/Data/Migrations/
